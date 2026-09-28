@@ -1,0 +1,32 @@
+GET http://localhost:3000/customers 
+
+###
+
+GET http://localhost:3000/customers/6abacdc41e58e432ab31006d
+
+###
+
+POST http://localhost:3000/customers/123
+Content-Type: application/json
+
+{
+    "name": "Kiggundu Badru",
+    "location": "Buikwe, Uganda",
+    "nationality": "Ugandan",
+    "DateCame": "2026-06-30"
+}
+
+###
+
+DELETE http://localhost:3000/customers/6abacdf11e58e432ab31006e
+
+###
+
+PATCH http://localhost:3000/customers/6abacdc41e58e432ab31006d
+Content-Type: application/json
+
+{
+    "name": "Mulopo Emmanuel",
+    "location": "Strasboug, France",
+    "nationality": "Congolese"
+}
